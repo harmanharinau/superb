@@ -627,12 +627,12 @@ async def auto_filter(client, msg, spoll=False):
         search, files, offset, total_results = spoll
 
     pre = 'filep' if settings['file_secure'] else 'file'
-    api = await get_sundisk(msg.chat.id)
+        api = await get_sundisk(msg.chat.id)
     if api is None:
-        api_url = f"https://OmegaLinks.in/st?api=9c53d31922826c891f8d5d730ef5c495c2bcf36e&url=https://t.me/{temp.U_NAME}?start="
+        api_url = f"https://t.me/{temp.U_NAME}?start="
     else:
         api = api["api"]
-        api_url = f"https://OmegaLinks.in/st?api={api}&url=https://t.me/{temp.U_NAME}?start="
+        api_url = f"https://omegalinks.in/st?api={api}&url=https://t.me/{temp.U_NAME}?start="
     btn = [
         [
             InlineKeyboardButton(
@@ -654,9 +654,6 @@ async def auto_filter(client, msg, spoll=False):
         btn.append(
             [InlineKeyboardButton(text="🗓 1/1", callback_data="pages")]
         )
-        btn.append([
-                InlineKeyboardButton("⚡️ How To Download ⚡️ ", url=f"https://t.me/How_To_Open_Links_23"),
-            ])
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
     if imdb:
