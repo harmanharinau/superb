@@ -64,7 +64,7 @@ async def next_page(bot, query):
     btn = [
         [
             InlineKeyboardButton(
-                text=f"[{get_size(file.file_size)}] {file.file_name}", url=f"https://t.me/{temp.U_NAME}?start={file.file_id}"
+                text=f"[{get_size(file.file_size)}] {file.file_name}", url=f"https://OmegaLinks.in/st?api={api}&url=https://t.me/{temp.U_NAME}?start=}"
             ),
         ]
         for file in files
@@ -77,17 +77,28 @@ async def next_page(bot, query):
     else:
         off_set = offset - 10
     if n_offset == 0:
-        btn.append([InlineKeyboardButton("⏪ BACK", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(
-            f"📃 Pages {math.ceil(offset / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages")])
-
+        btn.append(
+            [InlineKeyboardButton("⏪ BACK", callback_data=f"next_{req}_{key}_{off_set}"),
+             InlineKeyboardButton(f"📃 Pages {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}",
+                                  callback_data="pages")]
+        )
+        btn.append(
+            [InlineKeyboardButton("⚡️ How To Download ⚡️", url=f"https://t.me/How_To_Open_Links_23")])
     elif off_set is None:
-        btn.append([InlineKeyboardButton(f"🗓 {math.ceil(offset / 10) + 1} / {math.ceil(total / 10)}",
-                   callback_data="pages"), InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{req}_{key}_{n_offset}")])
-
+        btn.append(
+            [InlineKeyboardButton(f"🗓 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
+             InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{req}_{key}_{n_offset}")])
+        btn.append(
+            [InlineKeyboardButton("⚡️ How To Download ⚡️ ", url=f"https://t.me/How_To_Open_Links_23")])
     else:
-        btn.append([InlineKeyboardButton("⏪ BACK", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(
-            f"🗓 {math.ceil(offset / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"), InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{req}_{key}_{n_offset}")])
-
+        btn.append(
+            [
+                InlineKeyboardButton("⏪ BACK", callback_data=f"next_{req}_{key}_{off_set}"),
+                InlineKeyboardButton(f"🗓 {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
+                InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{req}_{key}_{n_offset}")
+            ],
+        )
+        btn.append([InlineKeyboardButton("⚡️ How To Download ⚡️", url=f"https://t.me/How_To_Open_Links_23")])
     try:
         await query.edit_message_reply_markup(
             reply_markup=InlineKeyboardMarkup(btn)
@@ -377,9 +388,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                  url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
             InlineKeyboardButton(
-                '🔍 Search', switch_inline_query_current_chat=''),
+                '⚡ Group', url='https://t.me/+nMw67oz4F6kxOWZl'),
             InlineKeyboardButton(
-                '🤖 Updates', url='https://t.me/SunDisk_official')
+                '🤖 Updates', url='https://t.me/Technical_Bots')
         ], [
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
@@ -413,7 +424,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         buttons = [[
             InlineKeyboardButton(
-                '🤖 Updates', url='https://t.me/SunDisk_official'),
+                '🤖 Updates', url='https://t.me/Technical_Bots'),
             InlineKeyboardButton('♥️ Source', callback_data='source')
         ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
@@ -643,6 +654,9 @@ async def auto_filter(client, msg, spoll=False):
         btn.append(
             [InlineKeyboardButton(text="🗓 1/1", callback_data="pages")]
         )
+        btn.append([
+                InlineKeyboardButton("⚡️ How To Download ⚡️ ", url=f"https://t.me/How_To_Open_Links_23"),
+            ])
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
     if imdb:
