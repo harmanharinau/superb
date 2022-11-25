@@ -64,7 +64,7 @@ async def next_page(bot, query):
     btn = [
         [
             InlineKeyboardButton(
-                text=f"[{get_size(file.file_size)}] {file.file_name}", url=f"https://OmegaLinks.in/st?api={api}&url=https://t.me/{temp.U_NAME}?start=}"
+                text=f"[{get_size(file.file_size)}] {file.file_name}", url=f"https://OmegaLinks.in/st?api={api}&url=https://t.me/{temp.U_NAME}?start="
             ),
         ]
         for file in files
