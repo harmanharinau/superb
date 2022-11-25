@@ -87,6 +87,9 @@ async def next_page(bot, query):
     else:
         btn.append([InlineKeyboardButton("⏪ BACK", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(
             f"🗓 {math.ceil(offset / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"), InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{req}_{key}_{n_offset}")])
+        btn.append(
+            [InlineKeyboardButton(text="⚡ How To Download Links ⚡", url=f"https://t.me/How_To_Open_Links_23")]
+        )
 
     try:
         await query.edit_message_reply_markup(
