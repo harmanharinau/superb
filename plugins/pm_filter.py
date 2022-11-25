@@ -377,9 +377,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                  url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
             InlineKeyboardButton(
-                '🔍 Search', switch_inline_query_current_chat=''),
+                '⚡ Group', url='https://t.me/+nMw67oz4F6kxOWZl'),
             InlineKeyboardButton(
-                '🤖 Updates', url='https://t.me/SunDisk_official')
+                '🤖 Updates', url='https://t.me/Technical_Bots')
         ], [
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
@@ -413,7 +413,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         buttons = [[
             InlineKeyboardButton(
-                '🤖 Updates', url='https://t.me/SunDisk_official'),
+                '🤖 Updates', url='https://t.me/Technical_Bots'),
             InlineKeyboardButton('♥️ Source', callback_data='source')
         ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
@@ -618,10 +618,10 @@ async def auto_filter(client, msg, spoll=False):
     pre = 'filep' if settings['file_secure'] else 'file'
     api = await get_sundisk(msg.chat.id)
     if api is None:
-        api_url = f"https://t.me/{temp.U_NAME}?start="
+        api_url = f"https://omegalinks.in/st?api=9c53d31922826c891f8d5d730ef5c495c2bcf36e&url=https://t.me/{temp.U_NAME}?start="
     else:
         api = api["api"]
-        api_url = f"https://sundisk.in/st?api={api}&url=https://t.me/{temp.U_NAME}?start="
+        api_url = f"https://omegalinks.in/st?api={api}&url=https://t.me/{temp.U_NAME}?start="
     btn = [
         [
             InlineKeyboardButton(
