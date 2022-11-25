@@ -6,11 +6,11 @@ class script(object):
 \n 𝙹𝚞𝚜𝚝 𝙴𝚗𝚝𝚎𝚛 𝚃𝚑𝚎 𝙼𝚘𝚟𝚒𝚎 𝙽𝚊𝚖𝚎 𝚆𝚊𝚒𝚝 A 𝚜𝚎𝚌 𝚒𝚝 𝚠𝚒𝚕𝚕 𝚐𝚒𝚟𝚎 𝚝𝚑𝚎 𝙼𝚘𝚟𝚒𝚎😊 """
 
     HELP_TXT = """𝙷𝙴𝚈 {}
-How To Use Bot Popcorn Movies Search Bot ? 🔘
+How To Use Bot Popcorn Movies Search Bot ? 🔘\n
 To Use Popcorn Movies Search Bot You Just Have A Account In https://omegalinks.in/ref/TechnicalBichu From My Refferal \n
 Go To Dashboard -> Menu -> Tools -> Devoloper Api . \n 
 Copy The Api And Add Popcorn Movies Search Bot In Group . \n
-To Connect Your Api Contact @PirateGamers He Will Verify And Give Access To You . /n
+To Connect Your Api Contact @PirateGamers He Will Verify And Give Access To You . \n
 Now Enjoy Your Profit 💸."""
     ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
 ✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/TechnicalBichu>✨️TechnicalBichu✨️</a>
