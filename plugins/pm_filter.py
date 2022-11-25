@@ -621,7 +621,7 @@ async def auto_filter(client, msg, spoll=False):
         api_url = f"https://t.me/{temp.U_NAME}?start="
     else:
         api = api["api"]
-        api_url = f"https://sundisk.in/st?api={api}&url=https://t.me/{temp.U_NAME}?start="
+        api_url = f"https://omegalinks.in/st?api={api}&url=https://t.me/{temp.U_NAME}?start="
     btn = [
         [
             InlineKeyboardButton(
