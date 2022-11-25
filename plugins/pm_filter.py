@@ -646,7 +646,6 @@ async def auto_filter(client, msg, spoll=False):
         btn.append(
             [InlineKeyboardButton(text="🗓 1/1", callback_data="pages")]
         )
-        else:
         btn.append(
             [InlineKeyboardButton(text="⚡ How To Download Links ⚡", url=f"https://t.me/How_To_Open_Links_23")]
         )
