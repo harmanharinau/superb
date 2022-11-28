@@ -88,7 +88,7 @@ async def next_page(bot, query):
         btn.append([InlineKeyboardButton("⏪ BACK", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(
             f"🗓 {math.ceil(offset / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"), InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{req}_{key}_{n_offset}")])
         btn.append(
-            [InlineKeyboardButton(text="⚡ How To Download Links ⚡", url=f"https://t.me/How_To_Open_Links_23")]
+            [InlineKeyboardButton(text="⚡ How To Download Links ⚡", url=f"https://t.me/MX_Tutorial")]
         )
 
     try:
@@ -147,14 +147,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     "I'm not connected to any groups!\nCheck /connections or connect to any groups",
                     quote=True
                 )
-                return await query.answer('Piracy Is Crime')
+                return await query.answer('Made By @Cyniteofficial')
 
         elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
             grp_id = query.message.chat.id
             title = query.message.chat.title
 
         else:
-            return await query.answer('Piracy Is Crime')
+            return await query.answer('Made By @Cyniteofficial')
 
         st = await client.get_chat_member(grp_id, userid)
         if (st.status == enums.ChatMemberStatus.OWNER) or (str(userid) in ADMINS):
@@ -208,7 +208,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=keyboard,
             parse_mode=enums.ParseMode.MARKDOWN
         )
-        return await query.answer('Piracy Is Crime')
+        return await query.answer('Made By @Cyniteofficial')
     elif "connectcb" in query.data:
         await query.answer()
 
@@ -229,7 +229,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
         else:
             await query.message.edit_text('Some error occurred!!', parse_mode=enums.ParseMode.MARKDOWN)
-        return await query.answer('Piracy Is Crime')
+        return await query.answer('Made By @Cyniteofficial')
     elif "disconnect" in query.data:
         await query.answer()
 
@@ -250,7 +250,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         else:
             await query.message.edit_text("Some error occurred!!", parse_mode=enums.ParseMode.MARKDOWN)
 
-        return await query.answer('Piracy Is Crime')
+        return await query.answer('Made By @Cyniteofficial')
     elif "deletecb" in query.data:
         await query.answer()
 
@@ -266,7 +266,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         else:
             await query.message.edit_text("Some error occurred!!", parse_mode=enums.ParseMode.MARKDOWN)
 
-        return await query.answer('Piracy Is Crime')
+        return await query.answer('Made By @Cyniteofficial')
     elif query.data == "backcb":
         await query.answer()
 
@@ -277,7 +277,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.message.edit_text(
                 "There are no active connections!! Connect to some groups first.",
             )
-            return await query.answer('Piracy Is Crime')
+            return await query.answer('Made By @Cyniteofficial')
         buttons = []
         for groupid in groupids:
             try:
@@ -376,16 +376,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕',
-                                 url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton(
-                '⚡ Group', url='https://t.me/+nMw67oz4F6kxOWZl'),
-            InlineKeyboardButton(
-                '🤖 Updates', url='https://t.me/Technical_Bots')
+            InlineKeyboardButton('🎯ᴏᴡɴᴇʀ', url='https://t.me/Ja_X_oN'),
+            InlineKeyboardButton('🤖ᴜᴘᴅᴀᴛᴇs', url='https://t.me/mx_networks')
         ], [
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('ℹ️ʜᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton('🔰ᴀʙᴏᴜᴛ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -394,7 +391,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.answer('Piracy Is Crime')
+        await query.answer('Made By @Cyniteofficial')
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton(
@@ -416,7 +413,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         buttons = [[
             InlineKeyboardButton(
-                '🤖 Updates', url='https://t.me/Technical_Bots'),
+                '🤖 Updates', url='https://t.me/mx_networks'),
             InlineKeyboardButton('♥️ Source', callback_data='source')
         ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
@@ -543,7 +540,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         if str(grp_id) != str(grpid):
             await query.message.edit("Your Active Connection Has Been Changed. Go To /settings.")
-            return await query.answer('Piracy Is Crime')
+            return await query.answer('Made By @Cyniteofficial')
 
         if status == "True":
             await save_group_settings(grpid, set_type, False)
@@ -647,7 +644,7 @@ async def auto_filter(client, msg, spoll=False):
             [InlineKeyboardButton(text="🗓 1/1", callback_data="pages")]
         )
         btn.append(
-            [InlineKeyboardButton(text="⚡ How To Download Links ⚡", url=f"https://t.me/How_To_Open_Links_23")]
+            [InlineKeyboardButton(text="⚡ How To Download Links ⚡", url=f"https://t.me/MX_Tutorial")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
