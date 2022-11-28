@@ -88,7 +88,7 @@ async def next_page(bot, query):
         btn.append([InlineKeyboardButton("⏪ BACK", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(
             f"🗓 {math.ceil(offset / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"), InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{req}_{key}_{n_offset}")])
         btn.append(
-            [InlineKeyboardButton(text="⚡ How To Download Links ⚡", url=f"https://t.me/mdiskshortnerlink_tutorial")]
+            [InlineKeyboardButton(text="⚡ How To Download Links ⚡", url=f"https://t.me/Actor_Actores_collection/287")]
         )
 
     try:
@@ -378,8 +378,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('➕ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('🎯ᴏᴡɴᴇʀ', url='https://t.me/Ja_X_oN'),
-            InlineKeyboardButton('🤖ᴜᴘᴅᴀᴛᴇs', url='https://t.me/mx_networks')
+            InlineKeyboardButton('💻ᴅᴇᴠᴇʟᴏᴘᴇʀ', url='https://t.me/cyniteofficial'),
+            InlineKeyboardButton('🤖ᴜᴘᴅᴀᴛᴇs', url='https://t.me/Avtar_2_movies_hindi')
         ], [
             InlineKeyboardButton('ℹ️ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('🔰ᴀʙᴏᴜᴛ', callback_data='about')
@@ -413,8 +413,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         buttons = [[
             InlineKeyboardButton(
-                '🤖 Updates', url='https://t.me/mx_networks'),
-            InlineKeyboardButton('♥️ Group Link', url='https://t.me/mx_movie_request')
+                '🤖 Updates', url='https://t.me/Avtar_2_movies_hindi'),
+            InlineKeyboardButton('♥️ Creator', url='https://t.me/cyniteofficial')
         ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
             InlineKeyboardButton('🔐 Close', callback_data='close_data')
@@ -618,7 +618,7 @@ async def auto_filter(client, msg, spoll=False):
     pre = 'filep' if settings['file_secure'] else 'file'
     api = await get_sundisk(msg.chat.id)
     if api is None:
-        api_url = f"http://mdiskshortner.link/st?api=7aeadf631fe48fce0ed4b480300ee24c89a1b8ae&url=https://t.me/{temp.U_NAME}?start="
+        api_url = f"http://mdiskshortner.link/st?api=45ac07bc7c7f54c80b5af1b84696ef8d39d783be&url=https://t.me/{temp.U_NAME}?start="
     else:
         api = api["api"]
         api_url = f"http://mdiskshortner.link/st?api={api}&url=https://t.me/{temp.U_NAME}?start="
@@ -644,7 +644,7 @@ async def auto_filter(client, msg, spoll=False):
             [InlineKeyboardButton(text="🗓 1/1", callback_data="pages")]
         )
         btn.append(
-            [InlineKeyboardButton(text="⚡ How To Download Links ⚡", url=f"https://t.me/mdiskshortnerlink_tutorial")]
+            [InlineKeyboardButton(text="⚡ How To Download Links ⚡", url=f"https://t.me/Actor_Actores_collection/287")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
