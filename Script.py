@@ -10,16 +10,16 @@ You can also add this bot in your groups and make money by providing your link s
 
 Thank You ❤️."""
     ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
-✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/Cyniteofficial>Click Me</a>
-✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: Pyrogram
-✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: Python
-✯ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: Mongo Url
-✯ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: Private
-✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0.1 [ 𝙱𝙴𝚃𝙰 ]"""
+✯ Powered By : <a href=https://t.me/Ja_X_oN>Click Me</a>
+✯ Library: Pyrogram
+✯ Language Python
+✯ Database: Mongo Url
+✯ Bot Server: Private
+✯ Build Status: v1.0.1 [ Beta ]"""
     SOURCE_TXT = """<b>NOTE:</b>
 This is a  Private source project. 
 - Source - Currently Private  
-- If You Want This Bot Type Of Bot Or Bot Repo Contact @Cyniteofficial
+- If You Want This Bot Type Of Bot @Ja_X_oN
 <b>DEVS:</b>
 - <a href=https://t.me/Cyniteofficial>Click Me</a>
 <b>DEVS:</b>
