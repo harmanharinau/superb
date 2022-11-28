@@ -6,11 +6,11 @@ class script(object):
 
 You can also add this bot in your groups and make money by providing your link shortners api.
 
-📌 For more info contact  :- @Ayita_P_S
+📌 For more info contact  :- @Imajaatt
 
 Thank You ❤️."""
     ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
-✯ Powered By : <a href=https://t.me/Ja_X_oN>Click Me</a>
+✯ Developed By : <a href=https://t.me/Cyniteofficial>Click Me</a>
 ✯ Library: Pyrogram
 ✯ Language Python
 ✯ Database: Mongo Url
@@ -19,7 +19,7 @@ Thank You ❤️."""
     SOURCE_TXT = """<b>NOTE:</b>
 This is a  Private source project. 
 - Source - Currently Private  
-- If You Want This Bot Type Of Bot @Ja_X_oN
+- If You Want This Bot Type Of Bot @cyniteofficial
 <b>DEVS:</b>
 - <a href=https://t.me/Cyniteofficial>Click Me</a>
 <b>DEVS:</b>
