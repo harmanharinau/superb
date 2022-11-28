@@ -2,7 +2,7 @@ class script(object):
 
     START_TXT = """𝙷𝙴𝙻𝙻𝙾 {} 👋🏻  𝙸 𝙰𝙼 𝙰𝙽 𝙰𝚄𝚃𝙾-𝙵𝙸𝙻𝚃𝙴𝚁 𝙱𝙾𝚃. 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝙼𝙴 𝙾𝙽 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿. 𝙰𝙳𝙳 𝙼𝙴 𝙰𝙽𝙳 𝙼𝙰𝙺𝙴 𝙼𝙴 𝙰𝙳𝙼𝙸𝙽..!👽 """
 
-    HELP_TXT = """𝐇𝐞𝐲 { }
+    HELP_TXT = """𝐇𝐞𝐲 {}
 
 You can also add this bot in your groups and make money by providing your link shortners api.
 
